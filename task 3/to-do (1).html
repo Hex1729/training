@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="frame">
+    <h2 class="heading">Todo list</h2>
+    <form >
+      <input type="text" placeholder="Add list" id="inputField">
+      <input type="submit" value="Add" id="addButton">
+    </form>
+    <nav> 
+      <a class="colored" href="#" id = "task-head" onclick="opentab('tasklist') ; tcol()">Task</a>
+      <a class="" href="#" id = "ctask-head"onclick="opentab('ctasklist'); ctcol()">Completed task</a>
+    </nav>
+    
+    <div id="task-div">
+      <ul id="tasklist" class="fade">
+        <li class="task">
+          <label for="">
+            <input type="checkbox" id="clickme" onclick="" checked>
+            <span class="task-item"> task 1 </span> 
+            <span class="close">&#215;</span> 
+          </label>
+        </li>
+        <li class="task">
+          <label for="">
+            <input type="checkbox" id="clickme" onclick="">
+            <span class="task-item"> task 2 </span>
+            <span class="close">&#215;</span>
+          </label>
+        </li>
+        <li class="task">
+          <label for="">
+            <input type="checkbox" id="clickme" onclick="">
+            <span class="task-item"> task 3 </span>
+            <span class="close">&#215;</span>
+          </label>
+        </li>
+      </ul>
+    </div>
+    
+    <div id="ctask-div" >
+      <ul id="ctasklist" style="display: none;">
+        <li class="ctask">
+          <label for="">
+            <input type="checkbox" id="clickme" onclick="">
+            <span class="task-item"> ctask 2 </span>
+            <span class="close">&#215;</span>
+          </label>
+        </li>
+      </div>
+    </div>
+  </div>
+  
+<script src="code.js"></script>
+</body>
+</html>
